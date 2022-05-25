@@ -1,0 +1,55 @@
+#ifndef HCLCD_CONFIG_H_
+#define HCLCD_CONFIG_H_
+
+/** Configure Rs, Rw, En Pins --> (PIN0 to PIN7) **/
+#define RS PIN0
+#define RW PIN1
+#define EN PIN2
+
+/** Configure Control Port --> PORTS (A, B , C, D) **/
+#define CONTROL_PORT MDIO_PORTC
+
+/** Configure Data Port --> PORTS (A, B , C, D) **/
+#define DATA_PORT MDIO_PORTA
+
+
+/** Configure Rs, Rw, En Pins --> (PIN0 to PIN7) **/
+#define RS_4Bits PIN1
+#define EN_4Bits PIN2
+#define RW_4Bits
+
+/** Configure Data Port for 4bits mode --> PORTS (A, B , C, D) **/
+#define DATA_CONTROL_PORT_4BITS MDIO_PORTA
+#define HCLCD_DATA_PIN0 PIN3
+#define HCLCD_DATA_PIN1 PIN4
+#define HCLCD_DATA_PIN2 PIN5
+#define HCLCD_DATA_PIN3 PIN6
+
+
+/**Function Set Option
+** 1- FUNCTION_SET_8BITS_2LINES
+** 2- FUNCTION_SET_8BITS_1LINES
+** 3- FUNCTION_SET_4BITS_2LINES 
+** 4- FUNCTION_SET_4BITS_1LINES 
+**/
+#define HCLCD_FUNCTION_SET	FUNCTION_SET_8BITS_2LINES
+
+
+/**HCLCD_Display_On_Off
+** 1- DISPLAY_ON_CURSOR_ON_BLINKING_ON
+** 2- DISPLAY_ON_CURSOR_ON_BLINKING_OFF
+** 3- DISPLAY_ON_CURSOR_OFF
+** 4- DISPLAY_OFF
+**/
+#define HCLCD_Display_On_Off	DISPLAY_ON_CURSOR_ON_BLINKING_OFF
+
+
+/** HCLCD Entry Mode Set Options
+** 1- ENTRY_MODE_SET_INCREASE_WITH_SHIFT
+** 2- ENTRY_MODE_SET_INCREASE
+** 3- ENTRY_MODE_SET_DECREASE_WITH_SHIFT
+** 4- ENTRY_MODE_SET_DECREASE
+**/
+#define HCLCD_ENTRY_MODE_SET	ENTRY_MODE_SET_INCREASE
+
+#endif
